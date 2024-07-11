@@ -33,6 +33,7 @@ public class registro{
     String sql = "INSERT INTO vehiculos (placa, marca, cilindraje, combustible, color, propietario) values (?,?,?,?,?,?)";
 
     public registro() {
+
         ingresarDatosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -84,6 +85,7 @@ public class registro{
         buscarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                registro.dispose();
                 new busqueda();
             }
         });
